@@ -7,13 +7,18 @@
 @layer base {
   body {
     background-color: #0b1929;
+    color: #ffffff;
+  }
+
+  .text-body {
+    color: #333333;
   }
 }
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 20%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
