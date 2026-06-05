@@ -215,18 +215,17 @@ const Index = () => {
           <div className="rounded-3xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-12">
             {/* Section Header */}
             <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Готовы к приключению?</h2>
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Контакты</h2>
+              <p className="text-xl text-white/80">МБОУ СОШ № 22 г. Шахты</p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               {/* Left Column - Contact Form */}
               <div className="rounded-2xl bg-white/95 text-black p-8 shadow-2xl">
-                <h3 className="text-2xl font-bold mb-6">Оставить заявку</h3>
+                <h3 className="text-2xl font-bold mb-6">Написать нам</h3>
                 <form className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">
-                      Имя
-                    </label>
+                    <label htmlFor="name" className="block text-sm font-medium mb-2">Имя</label>
                     <input
                       type="text"
                       id="name"
@@ -235,9 +234,7 @@ const Index = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">
-                      Email
-                    </label>
+                    <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
                     <input
                       type="email"
                       id="email"
@@ -246,45 +243,58 @@ const Index = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2">
-                      Интересующий тур или вопрос
-                    </label>
+                    <label htmlFor="message" className="block text-sm font-medium mb-2">Сообщение</label>
                     <textarea
                       id="message"
                       rows={5}
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                      placeholder="Расскажите, какое приключение вам интересно..."
+                      placeholder="Ваш вопрос или обращение..."
                     />
                   </div>
                   <Button className="w-full bg-black text-white hover:bg-gray-800 rounded-lg py-3 font-normal text-base">
-                    Отправить заявку
+                    Отправить
                   </Button>
                 </form>
               </div>
 
               {/* Right Column - Contact Info */}
-              <div className="space-y-8">
-                <div>
-                  <p className="text-xl text-white/90 leading-relaxed text-pretty">
-                    Напишите нам — расскажем про доступные экспедиции, поможем выбрать тур под ваш уровень и ответим на любые вопросы. Отвечаем в течение одного рабочего дня.
-                  </p>
-                </div>
-
-                {/* Profile Card */}
+              <div className="space-y-6">
+                {/* Director Card */}
                 <div className="rounded-2xl bg-white/95 text-black p-6 shadow-2xl">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-16 h-16 rounded-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
-                      <Icon name="Mountain" size={28} className="text-white" />
+                      <Icon name="User" size={28} className="text-white" />
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold">Команда Horizon Adventures</h4>
-                      <p className="text-gray-600">Организаторы экспедиций</p>
+                      <h4 className="text-lg font-semibold">Козаченко Светлана Дмитриевна</h4>
+                      <p className="text-gray-600">Директор школы</p>
                     </div>
                   </div>
-                  <Button className="w-full bg-black text-white hover:bg-gray-800 rounded-lg flex items-center justify-center gap-2">
-                    <Icon name="Mail" size={16} />
-                    Написать нам
-                  </Button>
+                </div>
+
+                {/* Info Cards */}
+                <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 p-6 flex items-start gap-4">
+                  <Icon name="MapPin" size={22} className="text-white/60 mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm text-white/50 mb-1">Адрес</p>
+                    <p className="text-white">Ростовская обл., г. Шахты, ул. Парковая, д. 2Б</p>
+                  </div>
+                </div>
+
+                <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 p-6 flex items-start gap-4">
+                  <Icon name="Phone" size={22} className="text-white/60 mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm text-white/50 mb-1">Телефон</p>
+                    <p className="text-white">Уточните номер у администрации</p>
+                  </div>
+                </div>
+
+                <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 p-6 flex items-start gap-4">
+                  <Icon name="Clock" size={22} className="text-white/60 mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm text-white/50 mb-1">Режим работы</p>
+                    <p className="text-white">Пн–Пт: 8:00 — 17:00</p>
+                  </div>
                 </div>
               </div>
             </div>
