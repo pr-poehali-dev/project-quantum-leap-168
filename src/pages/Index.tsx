@@ -285,7 +285,7 @@ const Index = () => {
                   <Icon name="Phone" size={22} className="text-white/60 mt-1 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-white/50 mb-1">Телефон</p>
-                    <p className="text-white">Уточните номер у администрации</p>
+                    <p className="text-white">+7 (904) 442-61-74</p>
                   </div>
                 </div>
 
@@ -311,19 +311,21 @@ const Index = () => {
               {/* Brand Section */}
               <div className="lg:col-span-2">
                 <div className="flex items-center gap-2 mb-6">
-                  <Icon name="Compass" size={24} />
-                  <span className="text-xl font-semibold">Horizon Adventures</span>
+                  <Icon name="GraduationCap" size={24} />
+                  <span className="text-xl font-semibold">МБОУ СОШ № 22</span>
                 </div>
                 <p className="text-white/80 leading-relaxed text-pretty">
-                  Авторские экспедиции и приключенческие туры по диким местам планеты. Пещеры, горы, джунгли — мы ведём туда, куда не доходят обычные туристы.
+                  Муниципальное бюджетное общеобразовательное учреждение «Средняя общеобразовательная школа № 22» г. Шахты Ростовской области.
                 </p>
+                <p className="text-white/60 text-sm mt-4">+7 (904) 442-61-74</p>
+                <p className="text-white/60 text-sm">ул. Парковая, д. 2Б, г. Шахты</p>
               </div>
 
-              {/* Expedition Links */}
+              {/* School Links */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">ТУРЫ</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">ШКОЛА</h3>
                 <ul className="space-y-3">
-                  {["Пещерные экспедиции", "Горные походы", "Джунгли", "Зимние туры"].map((item) => (
+                  {["Главная", "Новости", "Наши достижения", "Галерея"].map((item) => (
                     <li key={item}>
                       <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
                         {item}
@@ -333,11 +335,11 @@ const Index = () => {
                 </ul>
               </div>
 
-              {/* About Links */}
+              {/* For Parents */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">О НАС</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">РОДИТЕЛЯМ</h3>
                 <ul className="space-y-3">
-                  {["Наша миссия", "Безопасность", "Гиды", "Экология"].map((item) => (
+                  {["Расписание", "Электронный дневник", "Питание", "Безопасность"].map((item) => (
                     <li key={item}>
                       <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
                         {item}
@@ -347,11 +349,11 @@ const Index = () => {
                 </ul>
               </div>
 
-              {/* Resources Links */}
+              {/* For Students */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">ПОДДЕРЖКА</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">УЧАЩИМСЯ</h3>
                 <ul className="space-y-3">
-                  {["Вопросы и ответы", "Контакты", "Условия бронирования", "Страховка"].map((item) => (
+                  {["Кружки и секции", "Олимпиады", "Библиотека", "Контакты"].map((item) => (
                     <li key={item}>
                       <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
                         {item}
@@ -365,7 +367,7 @@ const Index = () => {
             {/* Newsletter Section */}
             <div className="border-t border-white/10 pt-12 mb-12">
               <div className="max-w-md">
-                <h3 className="text-lg font-semibold mb-4">Новости и анонсы экспедиций</h3>
+                <h3 className="text-lg font-semibold mb-4">Подписка на новости школы</h3>
                 <div className="flex gap-3">
                   <input
                     type="email"
@@ -379,7 +381,7 @@ const Index = () => {
 
             {/* Sub-footer */}
             <div className="border-t border-white/10 pt-8">
-              <p className="text-white/60 text-sm text-center">© 2025 Horizon Adventures — авторские экспедиции</p>
+              <p className="text-white/60 text-sm text-center">© 2025 МБОУ СОШ № 22 г. Шахты</p>
             </div>
           </div>
         </div>
