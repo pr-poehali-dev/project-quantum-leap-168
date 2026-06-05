@@ -1,6 +1,6 @@
-import { Compass, Lock, Sparkles, ShieldCheck, Wallet, Leaf, Plus, Minus, Mail, Mountain } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Icon from "@/components/ui/icon"
+import Nav from "@/components/Nav"
 import { useState } from "react"
 
 interface FAQ {
@@ -62,21 +62,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/85" />
         </div>
 
-        {/* Navigation */}
-        <nav className="relative z-10 flex items-center justify-center p-6">
-          {/* Navigation Links */}
-          <div className="hidden md:flex items-center gap-1">
-            {["Главная", "Новости", "Наши достижения", "Родителям", "Учащимся", "Контакты"].map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full hover:bg-black/50 transition-colors"
-              >
-                {item}
-              </a>
-            ))}
-          </div>
-        </nav>
+        <Nav />
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
