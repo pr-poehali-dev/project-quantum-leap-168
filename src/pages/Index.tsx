@@ -266,7 +266,7 @@ const Index = () => {
                       <Icon name="User" size={28} className="text-white" />
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold">Козаченко Светлана Дмитриевна</h4>
+                      <h4 className="text-lg font-semibold">Черникова Екатерина Олеговна</h4>
                       <p className="text-gray-600">Директор школы</p>
                     </div>
                   </div>
