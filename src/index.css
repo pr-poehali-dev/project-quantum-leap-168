@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&subset=cyrillic,latin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700&subset=cyrillic,latin&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,10 +8,16 @@
   body {
     background-color: #0b1929;
     color: #ffffff;
+    font-family: "Open Sans", sans-serif;
   }
 
-  .text-body {
-    color: #333333;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Roboto", sans-serif;
   }
 }
 
