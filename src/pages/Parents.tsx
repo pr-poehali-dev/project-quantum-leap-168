@@ -14,53 +14,47 @@ const Parents = () => {
   const [open, setOpen] = useState<number | null>(null)
 
   return (
-    <div className="min-h-screen bg-[#0B1929] text-white">
-      <div className="relative" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.7), #0B0F12 300px)" }}>
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-          style={{ backgroundImage: "url(https://cdn.poehali.dev/projects/96011115-ea91-4842-8842-c6aa9e84a4f1/bucket/8c550cb5-1dc9-4e4a-b4a4-0cb937814282.png)" }}
-        />
-        <div className="relative z-10">
-          <Nav />
-          <div className="px-6 pt-8 pb-16 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-4">Родителям</h1>
-            <p className="text-white/70 text-xl">Всё важное для родителей учащихся</p>
-          </div>
+    <div className="min-h-screen bg-white text-[#333333]">
+      <div className="bg-[#1E73BE]">
+        <Nav dark />
+        <div className="px-6 pt-6 pb-14 text-center text-white">
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">Родителям</h1>
+          <p className="text-white/80">Всё важное для родителей учащихся</p>
         </div>
       </div>
 
-      <section className="px-6 py-16">
-        <div className="max-w-4xl mx-auto space-y-6">
+      <section className="px-6 py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {[
               { icon: "BookOpen", title: "Электронный дневник", text: "Следите за оценками и посещаемостью онлайн" },
               { icon: "UtensilsCrossed", title: "Питание", text: "Горячее питание для всех учащихся школы" },
               { icon: "ShieldCheck", title: "Безопасность", text: "Охрана, видеонаблюдение, пропускной режим" },
             ].map((card, i) => (
-              <div key={i} className="rounded-2xl bg-white/5 ring-1 ring-white/10 p-6 text-center flex flex-col items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                  <Icon name={card.icon} size={22} />
+              <div key={i} className="bg-white rounded-2xl border border-gray-200 p-6 text-center flex flex-col items-center gap-3 shadow-sm">
+                <div className="w-12 h-12 rounded-full bg-[#1E73BE]/10 flex items-center justify-center">
+                  <Icon name={card.icon} size={22} className="text-[#1E73BE]" />
                 </div>
-                <h3 className="font-semibold text-lg">{card.title}</h3>
-                <p className="text-white/70 text-sm">{card.text}</p>
+                <h3 className="font-bold text-lg text-[#333333]">{card.title}</h3>
+                <p className="text-gray-500 text-sm">{card.text}</p>
               </div>
             ))}
           </div>
 
-          <h2 className="text-3xl font-bold mb-6">Частые вопросы</h2>
-          <div className="space-y-4">
+          <h2 className="text-3xl font-bold mb-6 text-[#333333]">Частые вопросы</h2>
+          <div className="space-y-3">
             {faqs.map((faq, i) => (
-              <div key={i} className="rounded-2xl bg-white/5 ring-1 ring-white/10 overflow-hidden">
+              <div key={i} className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
                 <button
                   onClick={() => setOpen(open === i ? null : i)}
-                  className="w-full p-6 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
+                  className="w-full p-5 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
                 >
-                  <span className="font-semibold pr-4">{faq.question}</span>
-                  <Icon name={open === i ? "Minus" : "Plus"} size={20} className="flex-shrink-0" />
+                  <span className="font-semibold text-[#333333] pr-4">{faq.question}</span>
+                  <Icon name={open === i ? "Minus" : "Plus"} size={18} className="flex-shrink-0 text-[#1E73BE]" />
                 </button>
                 {open === i && (
-                  <div className="px-6 pb-6">
-                    <p className="text-white/80 leading-relaxed">{faq.answer}</p>
+                  <div className="px-5 pb-5">
+                    <p className="text-gray-500 leading-relaxed text-sm">{faq.answer}</p>
                   </div>
                 )}
               </div>

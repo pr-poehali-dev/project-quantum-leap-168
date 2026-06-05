@@ -9,7 +9,7 @@ const navItems = [
   { label: "Контакты", path: "/contacts" },
 ]
 
-const Nav = () => {
+const Nav = ({ dark = false }: { dark?: boolean }) => {
   const location = useLocation()
 
   return (
@@ -19,10 +19,12 @@ const Nav = () => {
           <Link
             key={item.path}
             to={item.path}
-            className={`px-4 py-2 backdrop-blur rounded-full transition-colors ring-1 ${
+            className={`px-4 py-2 rounded-full transition-colors text-sm font-medium ${
               location.pathname === item.path
-                ? "bg-[#1E73BE] text-white ring-[#1E73BE]"
-                : "bg-black/40 ring-white/20 text-white hover:bg-[#1E73BE]/40"
+                ? "bg-[#1E73BE] text-white"
+                : dark
+                  ? "bg-black/40 ring-1 ring-white/20 text-white hover:bg-[#1E73BE]/40"
+                  : "text-[#333333] hover:bg-[#1E73BE]/10 hover:text-[#1E73BE]"
             }`}
           >
             {item.label}

@@ -4,80 +4,68 @@ import { Button } from "@/components/ui/button"
 
 const Contacts = () => {
   return (
-    <div className="min-h-screen bg-[#0B1929] text-white">
-      <div className="relative" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.7), #0B0F12 300px)" }}>
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-          style={{ backgroundImage: "url(https://cdn.poehali.dev/projects/96011115-ea91-4842-8842-c6aa9e84a4f1/bucket/8c550cb5-1dc9-4e4a-b4a4-0cb937814282.png)" }}
-        />
-        <div className="relative z-10">
-          <Nav />
-          <div className="px-6 pt-8 pb-16 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-4">Контакты</h1>
-            <p className="text-white/70 text-xl">МБОУ СОШ № 22 г. Шахты</p>
-          </div>
+    <div className="min-h-screen bg-white text-[#333333]">
+      <div className="bg-[#1E73BE]">
+        <Nav dark />
+        <div className="px-6 pt-6 pb-14 text-center text-white">
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">Контакты</h1>
+          <p className="text-white/80">МБОУ СОШ № 22 г. Шахты</p>
         </div>
       </div>
 
-      <section className="px-6 py-16">
+      <section className="px-6 py-16 bg-gray-50">
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Form */}
-          <div className="rounded-2xl bg-white/95 text-black p-8 shadow-2xl">
-            <h3 className="text-2xl font-bold mb-6">Написать нам</h3>
-            <form className="space-y-6">
+          <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
+            <h3 className="text-2xl font-bold mb-6 text-[#333333]">Написать нам</h3>
+            <form className="space-y-5">
               <div>
-                <label className="block text-sm font-medium mb-2">Имя</label>
-                <input type="text" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Ваше имя" />
+                <label className="block text-sm font-medium mb-2 text-[#333333]">Имя</label>
+                <input type="text" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#1E73BE] focus:border-transparent outline-none" placeholder="Ваше имя" />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Email</label>
-                <input type="email" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="your@email.com" />
+                <label className="block text-sm font-medium mb-2 text-[#333333]">Email</label>
+                <input type="email" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#1E73BE] focus:border-transparent outline-none" placeholder="your@email.com" />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Сообщение</label>
-                <textarea rows={5} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none" placeholder="Ваш вопрос или обращение..." />
+                <label className="block text-sm font-medium mb-2 text-[#333333]">Сообщение</label>
+                <textarea rows={5} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#1E73BE] focus:border-transparent outline-none resize-none" placeholder="Ваш вопрос или обращение..." />
               </div>
-              <Button className="w-full bg-black text-white hover:bg-gray-800 rounded-lg py-3 font-normal text-base">
-                Отправить
-              </Button>
+              <Button className="w-full bg-[#1E73BE] text-white hover:bg-[#1a65aa] rounded-lg py-3">Отправить</Button>
             </form>
           </div>
 
-          {/* Info */}
-          <div className="space-y-6">
-            <div className="rounded-2xl bg-white/95 text-black p-6 shadow-2xl">
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
-                  <Icon name="User" size={28} className="text-white" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold">Черникова Екатерина Олеговна</h4>
-                  <p className="text-gray-600">Директор школы</p>
-                </div>
+          <div className="space-y-4">
+            <div className="bg-white rounded-xl border border-gray-200 p-5 flex items-center gap-4 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-[#1E73BE]/10 flex items-center justify-center flex-shrink-0">
+                <Icon name="User" size={22} className="text-[#1E73BE]" />
+              </div>
+              <div>
+                <p className="font-bold text-[#333333]">Черникова Екатерина Олеговна</p>
+                <p className="text-gray-400 text-sm">Директор школы</p>
               </div>
             </div>
 
-            <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 p-6 flex items-start gap-4">
-              <Icon name="MapPin" size={22} className="text-white/60 mt-1 flex-shrink-0" />
+            <div className="bg-white rounded-xl border border-gray-200 p-5 flex items-start gap-4 shadow-sm">
+              <Icon name="MapPin" size={20} className="text-[#1E73BE] mt-1 flex-shrink-0" />
               <div>
-                <p className="text-sm text-white/50 mb-1">Адрес</p>
-                <p className="text-white">Ростовская обл., г. Шахты, ул. Парковая, д. 2Б</p>
+                <p className="text-sm text-gray-400 mb-1">Адрес</p>
+                <p className="text-[#333333] font-medium">Ростовская обл., г. Шахты, ул. Парковая, д. 2Б</p>
               </div>
             </div>
 
-            <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 p-6 flex items-start gap-4">
-              <Icon name="Phone" size={22} className="text-white/60 mt-1 flex-shrink-0" />
+            <div className="bg-white rounded-xl border border-gray-200 p-5 flex items-start gap-4 shadow-sm">
+              <Icon name="Phone" size={20} className="text-[#1E73BE] mt-1 flex-shrink-0" />
               <div>
-                <p className="text-sm text-white/50 mb-1">Телефон</p>
-                <a href="tel:+79044426174" className="text-white hover:text-white/80 transition-colors">+7 (904) 442-61-74</a>
+                <p className="text-sm text-gray-400 mb-1">Телефон</p>
+                <a href="tel:+79044426174" className="text-[#1E73BE] font-medium hover:underline">+7 (904) 442-61-74</a>
               </div>
             </div>
 
-            <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 p-6 flex items-start gap-4">
-              <Icon name="Clock" size={22} className="text-white/60 mt-1 flex-shrink-0" />
+            <div className="bg-white rounded-xl border border-gray-200 p-5 flex items-start gap-4 shadow-sm">
+              <Icon name="Clock" size={20} className="text-[#1E73BE] mt-1 flex-shrink-0" />
               <div>
-                <p className="text-sm text-white/50 mb-1">Режим работы</p>
-                <p className="text-white">Пн–Пт: 8:00 — 17:00</p>
+                <p className="text-sm text-gray-400 mb-1">Режим работы</p>
+                <p className="text-[#333333] font-medium">Пн–Пт: 8:00 — 17:00</p>
               </div>
             </div>
           </div>
