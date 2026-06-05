@@ -21,8 +21,8 @@ const Nav = () => {
             to={item.path}
             className={`px-4 py-2 backdrop-blur rounded-full transition-colors ring-1 ${
               location.pathname === item.path
-                ? "bg-white text-black ring-white"
-                : "bg-black/40 ring-white/20 text-white hover:bg-black/50"
+                ? "bg-[#1E73BE] text-white ring-[#1E73BE]"
+                : "bg-black/40 ring-white/20 text-white hover:bg-[#1E73BE]/40"
             }`}
           >
             {item.label}

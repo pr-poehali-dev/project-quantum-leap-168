@@ -11,7 +11,7 @@ const News = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-[#0B0F12] text-white">
+    <div className="min-h-screen bg-[#0B1929] text-white">
       <div
         className="relative"
         style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.7), #0B0F12 300px)" }}

@@ -49,7 +49,7 @@ const Index = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-[#0B0F12] text-white">
+    <div className="min-h-screen bg-[#0B1929] text-white">
       {/* Hero Section */}
       <div className="relative min-h-screen">
         {/* Background Image with Overlay */}
@@ -140,7 +140,7 @@ const Index = () => {
             <div className="text-center">
               <Button
                 size="lg"
-                className="bg-white text-black hover:bg-white/90 rounded-full px-12 py-4 text-lg font-semibold"
+                className="bg-[#1E73BE] text-white hover:bg-[#1a65aa] rounded-full px-12 py-4 text-lg font-semibold"
               >
                 Все новости
               </Button>
@@ -454,7 +454,7 @@ const Index = () => {
                     placeholder="Введите ваш email"
                     className="flex-1 px-4 py-3 rounded-lg bg-white/5 ring-1 ring-white/20 backdrop-blur border-0 text-white placeholder:text-white/50 focus:ring-2 focus:ring-white/30 focus:outline-none"
                   />
-                  <Button className="bg-white text-black hover:bg-white/90 rounded-lg px-6 h-[50px]">Подписаться</Button>
+                  <Button className="bg-[#1E73BE] text-white hover:bg-[#1a65aa] rounded-lg px-6 h-[50px]">Подписаться</Button>
                 </div>
               </div>
             </div>
