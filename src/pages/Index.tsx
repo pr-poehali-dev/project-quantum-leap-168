@@ -71,12 +71,7 @@ const Index = () => {
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
           {/* Main Headline */}
-          <h1 className="text-6xl md:text-8xl font-light tracking-tight mb-6 text-balance">Туда, где кончаются карты.</h1>
-
-          {/* Subheading */}
-          <p className="text-xl md:text-2xl text-white/90 max-w-4xl leading-relaxed text-pretty">
-            Horizon Adventures организует экспедиции в пещеры, горные походы и приключенческие туры по диким местам планеты — с профессиональными гидами и полной заботой о вашей безопасности.
-          </p>
+          <h1 className="text-6xl md:text-8xl font-light tracking-tight text-balance">Средняя общеобразовательная школа № 22</h1>
         </div>
       </div>
 
