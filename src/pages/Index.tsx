@@ -163,6 +163,100 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Achievements Section */}
+      <section className="relative z-10 py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+            <div className="text-center mb-16">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Наши достижения</h2>
+              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+                Гордимся успехами наших учеников в учёбе, спорте и творчестве
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 flex flex-col gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-yellow-500/20 ring-1 ring-yellow-500/40 flex items-center justify-center">
+                    <Icon name="Trophy" size={20} className="text-yellow-400" />
+                  </div>
+                  <span className="text-sm text-white/50">Олимпиады</span>
+                </div>
+                <h3 className="text-xl font-semibold">Призёры городской олимпиады</h3>
+                <p className="text-white/80 text-sm leading-relaxed">
+                  Ученики школы ежегодно занимают призовые места на городских олимпиадах по математике, русскому языку и физике.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 flex flex-col gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-blue-500/20 ring-1 ring-blue-500/40 flex items-center justify-center">
+                    <Icon name="Medal" size={20} className="text-blue-400" />
+                  </div>
+                  <span className="text-sm text-white/50">Спорт</span>
+                </div>
+                <h3 className="text-xl font-semibold">Победители соревнований</h3>
+                <p className="text-white/80 text-sm leading-relaxed">
+                  Спортивные команды школы регулярно побеждают в городских соревнованиях по волейболу, баскетболу и лёгкой атлетике.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 flex flex-col gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-purple-500/20 ring-1 ring-purple-500/40 flex items-center justify-center">
+                    <Icon name="Star" size={20} className="text-purple-400" />
+                  </div>
+                  <span className="text-sm text-white/50">Творчество</span>
+                </div>
+                <h3 className="text-xl font-semibold">Лауреаты конкурсов</h3>
+                <p className="text-white/80 text-sm leading-relaxed">
+                  Творческие коллективы школы — победители городских и региональных конкурсов художественной самодеятельности и изобразительного искусства.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 flex flex-col gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-green-500/20 ring-1 ring-green-500/40 flex items-center justify-center">
+                    <Icon name="GraduationCap" size={20} className="text-green-400" />
+                  </div>
+                  <span className="text-sm text-white/50">Выпускники</span>
+                </div>
+                <h3 className="text-xl font-semibold">100% поступление</h3>
+                <p className="text-white/80 text-sm leading-relaxed">
+                  Выпускники школы успешно поступают в высшие учебные заведения Ростова-на-Дону, Москвы и Санкт-Петербурга.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 flex flex-col gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-red-500/20 ring-1 ring-red-500/40 flex items-center justify-center">
+                    <Icon name="Heart" size={20} className="text-red-400" />
+                  </div>
+                  <span className="text-sm text-white/50">Волонтёрство</span>
+                </div>
+                <h3 className="text-xl font-semibold">Волонтёрское движение</h3>
+                <p className="text-white/80 text-sm leading-relaxed">
+                  Волонтёрский отряд школы активно участвует в городских акциях, помогает ветеранам и организует экологические субботники.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 flex flex-col gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-orange-500/20 ring-1 ring-orange-500/40 flex items-center justify-center">
+                    <Icon name="Award" size={20} className="text-orange-400" />
+                  </div>
+                  <span className="text-sm text-white/50">Конкурсы</span>
+                </div>
+                <h3 className="text-xl font-semibold">«Ученик года»</h3>
+                <p className="text-white/80 text-sm leading-relaxed">
+                  Ежегодно наши учащиеся становятся финалистами и победителями городского конкурса «Ученик года» в различных номинациях.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
