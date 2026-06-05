@@ -53,13 +53,7 @@ const Index = () => {
         </div>
 
         {/* Navigation */}
-        <nav className="relative z-10 flex items-center justify-between p-6">
-          {/* Logo */}
-          <div className="flex items-center gap-2 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
-            <Icon name="Compass" size={20} />
-            <span className="font-medium text-balance">Horizon Adventures</span>
-          </div>
-
+        <nav className="relative z-10 flex items-center justify-center p-6">
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-1">
             {["Главная", "Новости", "Наши достижения", "Родителям", "Учащимся", "Контакты"].map((item) => (
@@ -71,11 +65,6 @@ const Index = () => {
                 {item}
               </a>
             ))}
-          </div>
-
-          {/* Action Buttons */}
-          <div className="flex items-center gap-3">
-            <Button className="bg-white text-black hover:bg-white/90 rounded-full px-6">Записаться</Button>
           </div>
         </nav>
 
