@@ -70,38 +70,13 @@ const Index = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
-          {/* Badge */}
-          <div className="mb-6 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
-            <span className="text-sm font-medium">Авторские экспедиции и приключенческие туры</span>
-          </div>
-
           {/* Main Headline */}
           <h1 className="text-6xl md:text-8xl font-light tracking-tight mb-6 text-balance">Туда, где кончаются карты.</h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-white/90 max-w-4xl mb-12 leading-relaxed text-pretty">
+          <p className="text-xl md:text-2xl text-white/90 max-w-4xl leading-relaxed text-pretty">
             Horizon Adventures организует экспедиции в пещеры, горные походы и приключенческие туры по диким местам планеты — с профессиональными гидами и полной заботой о вашей безопасности.
           </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-16">
-            <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8 py-4 text-lg">
-              Выбрать экспедицию
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="bg-black/40 ring-1 ring-white/20 backdrop-blur border-0 text-white hover:bg-black/50 rounded-full px-8 py-4 text-lg"
-            >
-              Смотреть маршруты
-            </Button>
-          </div>
-
-          {/* Footer Note */}
-          <div className="flex items-center gap-2 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
-            <Icon name="Lock" size={16} />
-            <span className="text-sm font-medium">Безопасность — наш абсолютный приоритет</span>
-          </div>
         </div>
       </div>
 
