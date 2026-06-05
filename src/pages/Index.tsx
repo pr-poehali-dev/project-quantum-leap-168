@@ -75,48 +75,7 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Features Section */}
-      <section className="relative z-10 py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-            {/* Expert-Led Tours */}
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                <Icon name="Sparkles" size={24} />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Опытные гиды</h3>
-              <p className="text-white/80 leading-relaxed">Каждую экспедицию ведут сертифицированные профессионалы с многолетним опытом.</p>
-            </div>
 
-            {/* World-Class Safety */}
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                <Icon name="ShieldCheck" size={24} />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Безопасность</h3>
-              <p className="text-white/80 leading-relaxed">Строгие протоколы, современное снаряжение и постоянная связь с базой.</p>
-            </div>
-
-            {/* All-Inclusive Package */}
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                <Icon name="Wallet" size={24} />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Всё включено</h3>
-              <p className="text-white/80 leading-relaxed">Снаряжение, питание, трансфер и страховка — всё в одном пакете.</p>
-            </div>
-
-            {/* Eco-Responsible */}
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                <Icon name="Leaf" size={24} />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Ответственный туризм</h3>
-              <p className="text-white/80 leading-relaxed">Мы бережём природу и оставляем дикие места такими же дикими.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Journey Section */}
       <section className="relative z-10 py-24 px-6">
