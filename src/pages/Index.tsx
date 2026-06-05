@@ -77,72 +77,76 @@ const Index = () => {
 
 
 
-      {/* Journey Section */}
+      {/* News Section */}
       <section className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
             {/* Section Header */}
             <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Как проходит экспедиция</h2>
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Новости школы</h2>
               <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
-                От первого звонка до возвращения домой — мы берём на себя каждый шаг.
+                Последние события и объявления МБОУ СОШ № 22 г. Шахты
               </p>
             </div>
 
-            {/* Journey Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-              {/* Phase 1 */}
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
-                <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">01.</div>
-                  <h3 className="text-xl font-semibold mb-4">Подбор тура</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
-                    Расскажите о своих интересах и уровне подготовки — мы подберём идеальный маршрут из нашей коллекции экспедиций.
-                  </p>
-                </div>
+            {/* News Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 flex flex-col gap-4">
+                <span className="text-sm text-white/50">1 июня 2025</span>
+                <h3 className="text-xl font-semibold">День защиты детей</h3>
+                <p className="text-white/80 leading-relaxed text-sm">
+                  В нашей школе прошёл праздник, посвящённый Дню защиты детей. Учащиеся подготовили концертные номера и творческие выставки.
+                </p>
               </div>
 
-              {/* Phase 2 */}
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
-                <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">02.</div>
-                  <h3 className="text-xl font-semibold mb-4">Подготовка</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
-                    Получите список снаряжения, рекомендации по физподготовке и подробный брифинг — мы подготовим вас к маршруту.
-                  </p>
-                </div>
+              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 flex flex-col gap-4">
+                <span className="text-sm text-white/50">24 мая 2025</span>
+                <h3 className="text-xl font-semibold">Последний звонок — 2025</h3>
+                <p className="text-white/80 leading-relaxed text-sm">
+                  Торжественная линейка для выпускников 9-х и 11-х классов. Поздравляем всех, кто завершает этот важный этап жизни!
+                </p>
               </div>
 
-              {/* Phase 3 */}
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
-                <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">03.</div>
-                  <h3 className="text-xl font-semibold mb-4">Экспедиция</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
-                    Пещеры, горные перевалы, дикая природа — ваш гид ведёт группу, обеспечивает безопасность и раскрывает тайны маршрута.
-                  </p>
-                </div>
+              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 flex flex-col gap-4">
+                <span className="text-sm text-white/50">9 мая 2025</span>
+                <h3 className="text-xl font-semibold">День Победы</h3>
+                <p className="text-white/80 leading-relaxed text-sm">
+                  Учащиеся школы приняли участие в городских мероприятиях, посвящённых 80-летию Победы в Великой Отечественной войне.
+                </p>
               </div>
 
-              {/* Phase 4 */}
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
-                <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">04.</div>
-                  <h3 className="text-xl font-semibold mb-4">Возвращение</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
-                    Трансфер обратно, фотоотчёт от команды и воспоминания на всю жизнь. А следующее приключение уже ждёт.
-                  </p>
-                </div>
+              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 flex flex-col gap-4">
+                <span className="text-sm text-white/50">22 апреля 2025</span>
+                <h3 className="text-xl font-semibold">Субботник</h3>
+                <p className="text-white/80 leading-relaxed text-sm">
+                  Весенний субботник объединил учеников, педагогов и родителей. Территория школы приведена в порядок к новому сезону.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 flex flex-col gap-4">
+                <span className="text-sm text-white/50">14 марта 2025</span>
+                <h3 className="text-xl font-semibold">Олимпиада по математике</h3>
+                <p className="text-white/80 leading-relaxed text-sm">
+                  Наши ученики заняли призовые места в городской олимпиаде по математике. Поздравляем победителей и их педагогов!
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 flex flex-col gap-4">
+                <span className="text-sm text-white/50">23 февраля 2025</span>
+                <h3 className="text-xl font-semibold">День защитника Отечества</h3>
+                <p className="text-white/80 leading-relaxed text-sm">
+                  Школьный концерт и спортивные соревнования в честь праздника. Мальчики показали силу и ловкость в весёлых эстафетах.
+                </p>
               </div>
             </div>
 
-            {/* Check Availability Button */}
+            {/* Button */}
             <div className="text-center">
               <Button
                 size="lg"
                 className="bg-white text-black hover:bg-white/90 rounded-full px-12 py-4 text-lg font-semibold"
               >
-                Смотреть все туры
+                Все новости
               </Button>
             </div>
           </div>
